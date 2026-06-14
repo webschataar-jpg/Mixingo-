@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mixingo translates mixed-language, transliterated, and informal text the way people actually speak." />
+  <title>Mixingo — Translation for how people actually talk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div class="noise"></div><div class="cursor-glow"></div>
+  <nav class="nav shell">
+    <a class="brand" href="#"><span class="brand-mark"><i></i><i></i><i></i></span>mixingo</a>
+    <div class="nav-links"><a href="#product">Product</a><a href="#developers">Developers</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div>
+    <div class="nav-actions"><a class="text-link" href="#">Sign in</a><a class="button small" href="#demo">Try for free <span>↗</span></a></div>
+    <button class="menu" aria-label="Open menu">☰</button>
+  </nav>
+
+  <main>
+    <section class="hero shell">
+      <div class="orb orb-one"></div><div class="orb orb-two"></div>
+      <div class="eyebrow reveal"><span></span> Translation that speaks human</div>
+      <h1 class="reveal delay-1">Every language.<br><em>Your</em> language.</h1>
+      <p class="hero-copy reveal delay-2">Mixingo understands the wonderfully messy way multilingual people actually write — mixed languages, slang, transliteration and all.</p>
+      <div class="hero-actions reveal delay-3"><a class="button primary" href="#demo">Start translating — it’s free <span>↗</span></a><a class="watch" href="#product"><b>▶</b> See how it works</a></div>
+      <div class="proof reveal delay-3"><div class="avatars"><span>अ</span><span>ع</span><span>文</span><span>A</span></div><div><strong>Built for the multilingual internet</strong><small>No signup. No credit card. Just paste & translate.</small></div></div>
+    </section>
+
+    <section class="demo-wrap shell" id="demo">
+      <div class="demo-glow"></div>
+      <div class="translator-card reveal">
+        <div class="window-bar"><div class="dots"><i></i><i></i><i></i></div><span>mixingo.app/translate</span><div class="secure">⌁ secure</div></div>
+        <div class="translator">
+          <div class="input-panel">
+            <div class="select-row"><button>Auto-detect <span>⌄</span></button><span class="char-count">54 / 1,000</span></div>
+            <textarea id="source" maxlength="1000" spellcheck="false">Yaar kal ka meeting reschedule kardo, I won't be free.</textarea>
+            <div class="input-foot"><button class="icon-btn" aria-label="Listen">◖))</button><button class="icon-btn" id="clear" aria-label="Clear">×</button></div>
+          </div>
+          <button class="swap" aria-label="Swap languages">⇄</button>
+          <div class="output-panel">
+            <div class="select-row"><button>Natural English <span>⌄</span></button><span class="detected"><i></i> Hindi + English detected</span></div>
+            <div class="result" id="result">Hey, please reschedule tomorrow’s meeting. I won’t be available.</div>
+            <div class="output-foot"><span><i class="spark">✦</i> Tone preserved</span><div><button class="icon-btn">◖))</button><button class="icon-btn" id="copy">▢</button></div></div>
+          </div>
+        </div>
+        <div class="demo-footer"><span><i></i> Mixingo understood <b>Yaar</b> as casual address, not a literal word.</span><button id="translateBtn">Translate <kbd>⌘ ↵</kbd></button></div>
+      </div>
+      <div class="floating-note note-one"><span>✦</span><div><b>Code-mix aware</b><small>Understands 2+ languages in one sentence</small></div></div>
+      <div class="floating-note note-two"><span>☺</span><div><b>Sounds like you</b><small>Keeps context, slang & tone intact</small></div></div>
+    </section>
+
+    <section class="marquee"><div>HINGLISH <span>✦</span> SPANGLISH <span>✦</span> ARABIZI <span>✦</span> FRANGLAIS <span>✦</span> TAGLISH <span>✦</span> MANGLISH <span>✦</span> HINGLISH <span>✦</span> SPANGLISH <span>✦</span></div></section>
+
+    <section class="problem shell" id="product">
+      <div class="section-label">01 — THE PROBLEM</div>
+      <div class="problem-grid"><h2>People don’t speak<br>in <span>textbooks.</span></h2><div><p>We switch languages mid-sentence. We type how words sound. We use slang, shortcuts and inside jokes.</p><p class="muted">Most translators expect perfect input.<br><strong>Mixingo expects real life.</strong></p></div></div>
+      <div class="compare-grid">
+        <article class="compare old"><div class="compare-head"><span>Generic translator</span><i>Literal</i></div><p class="prompt">“Bro, scene kya hai tonight?”</p><div class="bad-output"><span>×</span><p>“Brother, what is the scene tonight?”<small>Technically translated. Practically weird.</small></p></div></article>
+        <article class="compare new"><div class="compare-head"><span><b>✦</b> Mixingo</span><i>Natural</i></div><p class="prompt">“Bro, scene kya hai tonight?”</p><div class="good-output"><span>✓</span><p>“Hey, what’s the plan for tonight?”<small>Meaning, context and vibe — preserved.</small></p></div></article>
+      </div>
+    </section>
+
+    <section class="features shell">
+      <div class="section-label">02 — WHY MIXINGO</div><div class="section-title"><h2>Messy input.<br><em>Beautiful</em> output.</h2><p>Translation designed around the way real people communicate online — not the way grammar books say they should.</p></div>
+      <div class="feature-grid">
+        <article class="feature feature-large"><div class="feature-visual language-cloud"><span>Hola</span><span>नमस्ते</span><span>Hello</span><span>مرحبا</span><span>Salut</span><div>✦</div></div><span class="num">01</span><h3>Understands the mix</h3><p>Multiple languages, one sentence? No problem. Mixingo detects every switch automatically.</p></article>
+        <article class="feature"><div class="feature-visual tone"><div class="wave">▂▅▃▇▂▆▃▅▂</div><span>CASUAL</span><span>FRIENDLY</span><span>YOU</span></div><span class="num">02</span><h3>Keeps your vibe</h3><p>Formal stays formal. Casual stays casual. Your tone doesn’t get lost in translation.</p></article>
+        <article class="feature"><div class="feature-visual script"><div>mera dil<br><span>मेरा दिल</span><br><b>my heart</b></div></div><span class="num">03</span><h3>Reads between scripts</h3><p>Type phonetically, switch alphabets, misspell a word. Mixingo still understands.</p></article>
+        <article class="feature feature-wide" id="developers"><div><span class="num">04</span><h3>Built for your product, too.</h3><p>Bring natural multilingual translation to chats, support flows and communities with one clean API.</p><a href="#">Explore the developer API <span>↗</span></a></div><pre><code><span>const</span> result = <span>await</span> mixingo.translate({
+  text: <i>"kal milte hain?"</i>,
+  to: <i>"en-natural"</i>
+});
+
+<span class="comment">// “Want to meet tomorrow?”</span></code></pre></article>
+      </div>
+    </section>
+
+    <section class="pricing shell" id="pricing">
+      <div class="section-label">03 — PRICING</div><div class="pricing-title"><h2>Start free.<br>Stay because it <em>gets you.</em></h2><div class="toggle"><button class="active">Monthly</button><button>Yearly <span>Save 37%</span></button></div></div>
+      <div class="plans">
+        <article><span class="plan-name">EXPLORER</span><h3>Free</h3><p>For everyday messages, captions and curious minds.</p><a class="plan-button" href="#demo">Start translating</a><ul><li>✓ 250K characters / month</li><li>✓ Web translator + API</li><li>✓ 2 active API keys</li><li>✓ No credit card required</li></ul></article>
+        <article class="popular"><div class="popular-tag">MOST LOVED</div><span class="plan-name">FLUENT</span><h3><sup>$</sup>3.99<small>/ month</small></h3><p>For creators, builders and multilingual teams.</p><a class="plan-button filled" href="#">Go Fluent <span>↗</span></a><ul><li>✓ 1M characters / month</li><li>✓ 30 API requests / minute</li><li>✓ 5 active API keys</li><li>✓ Priority translation queue</li></ul></article>
+        <article class="custom"><span class="plan-name">BUSINESS</span><h3>Let’s talk</h3><p>For growing products with serious multilingual needs.</p><a class="plan-button" href="mailto:hello@mixingo.app">Book a conversation</a><ul><li>✓ Custom usage limits</li><li>✓ Dedicated support</li><li>✓ Integration guidance</li><li>✓ Early feature access</li></ul></article>
+      </div><p class="annual-note">Founding offer: <strong>$29.99/year</strong> for the first 1,000 members. Same generous limits, billed annually.</p>
+    </section>
+
+    <section class="soon shell"><div class="soon-copy"><span>COMING SOON</span><h2>Your documents<br>will speak human, too.</h2><p>PDF and file translation is on our roadmap — with the same context-aware, beautifully natural output.</p><a href="mailto:hello@mixingo.app">Join the waitlist <span>↗</span></a></div><div class="file-stack"><div class="file f3"></div><div class="file f2"></div><div class="file f1"><span>PDF</span><i></i><i></i><i></i><b>✦</b></div></div></section>
+
+    <section class="faq shell" id="faq"><div><div class="section-label">04 — FAQ</div><h2>Questions,<br><em>translated.</em></h2></div><div class="accordion">
+      <details open><summary>What exactly is code-mixed text?<span>+</span></summary><p>It’s how multilingual people naturally communicate — switching between languages, scripts, and slang within the same sentence. Think Hinglish, Spanglish, Arabizi, Taglish, and countless everyday combinations.</p></details>
+      <details><summary>Can I use Mixingo without signing up?<span>+</span></summary><p>Yes. Anonymous visitors can translate up to 1,000 characters at a time, with no account or credit card needed.</p></details>
+      <details><summary>Which languages does Mixingo support?<span>+</span></summary><p>Mixingo is designed for widely spoken languages and their most common mixed-language combinations. Coverage continues to expand based on real usage.</p></details>
+      <details><summary>Does web and API usage share the same limit?<span>+</span></summary><p>Yes. Signed-in accounts use one clear, unified character allowance across both web and API translation.</p></details>
+      <details><summary>Can Mixingo translate PDFs or files?<span>+</span></summary><p>Not yet. Mixingo is focused on fast, excellent text translation today. File translation is on the roadmap.</p></details>
+    </div></section>
+
+    <section class="final-cta"><div class="cta-orb"></div><div class="shell"><span class="mini-mark">✦</span><h2>Say it your way.<br><em>We’ll understand.</em></h2><p>Your first translation is one paste away.</p><a class="button light" href="#demo">Try Mixingo free <span>↗</span></a><small>No signup · No credit card · No awkward translations</small></div></section>
+  </main>
+  <footer class="footer shell"><a class="brand" href="#"><span class="brand-mark"><i></i><i></i><i></i></span>mixingo</a><p>Translation for how people actually talk.</p><div><a href="#">Privacy</a><a href="#">Terms</a><a href="#developers">API docs</a><a href="mailto:hello@mixingo.app">Contact</a></div><span>© 2026 Mixingo</span></footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
