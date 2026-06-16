@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mixingo translates mixed-language, transliterated, and informal text the way people actually speak." />
-  <title>Mixingo — Translation for how people actually talk</title>
+  <meta name="description" content="Mixingo is a code-mixed translation API and web translator for Hinglish, Spanglish, Taglish, Arabizi, Singlish and other hybrid language text." />
+  <title>Mixingo — Code-mixed translation API for hybrid languages</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -22,11 +22,11 @@
   <main>
     <section class="hero shell">
       <div class="orb orb-one"></div><div class="orb orb-two"></div>
-      <div class="eyebrow reveal"><span></span> Private beta · Waitlist now open</div>
-      <h1 class="reveal delay-1">Every language.<br><em>Your</em> language.</h1>
-      <p class="hero-copy reveal delay-2">Mixingo understands the wonderfully messy way multilingual people actually write — mixed languages, slang, transliteration and all.</p>
-      <div class="hero-actions reveal delay-3"><a class="button primary" href="#waitlist">Get early access <span>↗</span></a><a class="watch" href="#product"><b>▶</b> See how it works</a></div>
-      <div class="proof reveal delay-3"><div class="avatars"><span>अ</span><span>ع</span><span>文</span><span>A</span></div><div><strong>Built for the multilingual internet</strong><small>Hinglish, Spanglish, Taglish, Arabizi & beyond.</small></div></div>
+      <div class="eyebrow reveal"><span></span> Private beta · First built-for-code-mix translation API</div>
+      <h1 class="reveal delay-1">Translate Hinglish, Spanglish & hybrid text<br><em>without flattening the mix.</em></h1>
+      <p class="hero-copy reveal delay-2">Mixingo is a web translator and developer API for code-mixed language: slang, transliteration, script switching and two-language sentences that generic tools often normalize into something no one would actually say.</p>
+      <div class="hero-actions reveal delay-3"><a class="button primary" href="#waitlist">Get API early access <span>↗</span></a><a class="watch" href="#product"><b>▶</b> See the failure generic tools miss</a></div>
+      <div class="proof reveal delay-3"><div class="avatars"><span>हिं</span><span>Es</span><span>ع</span><span>Ta</span></div><div><strong>Purpose-built for hybrid languages</strong><small>Hinglish, Spanglish, Taglish, Singlish, Arabizi, Manglish & beyond.</small></div></div>
     </section>
 
     <section class="demo-wrap shell" id="demo">
@@ -56,20 +56,25 @@
 
     <section class="problem shell" id="product">
       <div class="section-label">01 — THE PROBLEM</div>
-      <div class="problem-grid"><h2>People don’t speak<br>in <span>textbooks.</span></h2><div><p>We switch languages mid-sentence. We type how words sound. We use slang, shortcuts and inside jokes.</p><p class="muted">Most translators expect perfect input.<br><strong>Mixingo expects real life.</strong></p></div></div>
+      <div class="problem-grid"><h2>People don’t speak<br>in <span>textbooks.</span></h2><div><p>Your users do not submit clean textbook language. They write “kal refund milega?”, “¿puedo reschedule la cita?”, “lah can ship today?” and expect software to understand intent, tone and script.</p><p class="muted">Most translators normalize the mess away.<br><strong>Mixingo preserves the meaning inside the mix.</strong></p></div></div>
       <div class="compare-grid">
         <article class="compare old"><div class="compare-head"><span>Generic translator</span><i>Literal</i></div><p class="prompt">“Bro, scene kya hai tonight?”</p><div class="bad-output"><span>×</span><p>“Brother, what is the scene tonight?”<small>Technically translated. Practically weird.</small></p></div></article>
         <article class="compare new"><div class="compare-head"><span><b>✦</b> Mixingo</span><i>Natural</i></div><p class="prompt">“Bro, scene kya hai tonight?”</p><div class="good-output"><span>✓</span><p>“Hey, what’s the plan for tonight?”<small>Meaning, context and vibe — preserved.</small></p></div></article>
       </div>
+      <div class="pain-grid">
+        <article><span>01</span><h3>Support tickets lose intent</h3><p>A user writes Hinglish or Taglish because that is how they explain the problem. A literal translation can miss urgency, politeness, sarcasm or the actual product issue.</p></article>
+        <article><span>02</span><h3>Chat products break on mixed scripts</h3><p>Romanized Hindi, Arabic chat spelling, Spanish-English switching and local slang arrive in the same thread. Language detection alone is not enough.</p></article>
+        <article><span>03</span><h3>Developers need an API, not a demo trick</h3><p>Apps need predictable JSON, streaming and non-streaming modes, script detection, usage limits and examples that map to real product flows.</p></article>
+      </div>
     </section>
 
     <section class="features shell">
-      <div class="section-label">02 — WHY MIXINGO</div><div class="section-title"><h2>Messy input.<br><em>Beautiful</em> output.</h2><p>Translation designed around the way real people communicate online — not the way grammar books say they should.</p></div>
+      <div class="section-label">02 — WHY MIXINGO</div><div class="section-title"><h2>Code-mix in.<br><em>Context</em> out.</h2><p>Translation designed around hybrid language pairs, anti-normalization and product integrations — not generic multilingual marketing.</p></div>
       <div class="feature-grid">
-        <article class="feature feature-large"><div class="feature-visual language-cloud"><span>Hola</span><span>नमस्ते</span><span>Hello</span><span>مرحبا</span><span>Salut</span><div>✦</div></div><span class="num">01</span><h3>Understands the mix</h3><p>Multiple languages, one sentence? No problem. Mixingo detects every switch automatically.</p></article>
-        <article class="feature"><div class="feature-visual tone"><div class="wave">▂▅▃▇▂▆▃▅▂</div><span>CASUAL</span><span>FRIENDLY</span><span>YOU</span></div><span class="num">02</span><h3>Keeps your vibe</h3><p>Formal stays formal. Casual stays casual. Your tone doesn’t get lost in translation.</p></article>
-        <article class="feature"><div class="feature-visual script"><div>mera dil<br><span>मेरा दिल</span><br><b>my heart</b></div></div><span class="num">03</span><h3>Reads between scripts</h3><p>Type phonetically, switch alphabets, misspell a word. Mixingo still understands.</p></article>
-        <article class="feature feature-wide" id="developers"><div><span class="num">04</span><h3>Built for your product, too.</h3><p>Bring natural multilingual translation to chats, support flows and communities with one clean API.</p><a href="#">Explore the developer API <span>↗</span></a></div><pre><code><span>const</span> result = <span>await</span> mixingo.translate({
+        <article class="feature feature-large"><div class="feature-visual language-cloud"><span>Hola</span><span>नमस्ते</span><span>Hello</span><span>مرحبا</span><span>Salut</span><div>✦</div></div><span class="num">01</span><h3>Understands hybrid pairs</h3><p>Hinglish, Spanglish, Taglish, Singlish, Arabizi and regional mixes are treated as first-class inputs, not edge cases.</p></article>
+        <article class="feature"><div class="feature-visual tone"><div class="wave">▂▅▃▇▂▆▃▅▂</div><span>CASUAL</span><span>FRIENDLY</span><span>YOU</span></div><span class="num">02</span><h3>Doesn’t over-normalize</h3><p>Mixingo keeps conversational intent and local phrasing instead of forcing every sentence into stiff textbook English.</p></article>
+        <article class="feature"><div class="feature-visual script"><div>mera dil<br><span>मेरा दिल</span><br><b>my heart</b></div></div><span class="num">03</span><h3>Detects scripts and transliteration</h3><p>Romanized words, native scripts, informal spelling and mid-sentence switches are part of the input model.</p></article>
+        <article class="feature feature-wide" id="developers"><div><span class="num">04</span><h3>Built for developer revenue.</h3><p>Use one API for chat, support, marketplaces and communities with streaming, non-streaming, script detection and account-level usage controls.</p><a href="developers.html">Explore docs preview <span>↗</span></a></div><pre><code><span>const</span> result = <span>await</span> mixingo.translate({
   text: <i>"kal milte hain?"</i>,
   to: <i>"en-natural"</i>
 });
@@ -92,7 +97,7 @@
       </div><p class="annual-note">Founding offer: <strong>$29.99/year</strong> for the first 1,000 members. Same generous limits, billed annually.</p>
     </section>
 
-    <section class="soon shell"><div class="soon-copy"><span>COMING SOON</span><h2>Your documents<br>will speak human, too.</h2><p>PDF and file translation is on our roadmap — with the same context-aware, beautifully natural output.</p><a href="mailto:hello@mixingo.app">Join the waitlist <span>↗</span></a></div><div class="file-stack"><div class="file f3"></div><div class="file f2"></div><div class="file f1"><span>PDF</span><i></i><i></i><i></i><b>✦</b></div></div></section>
+    <section class="soon shell"><div class="soon-copy"><span>ROADMAP — NOT THE CORE OFFER</span><h2>Files can wait.<br>Code-mixed text comes first.</h2><p>PDF and file translation are planned later. Today Mixingo stays focused on the harder wedge: real-time hybrid language text for web users and API products.</p><a href="developers.html">See the API direction <span>↗</span></a></div><div class="file-stack"><div class="file f3"></div><div class="file f2"></div><div class="file f1"><span>TEXT API</span><i></i><i></i><i></i><b>✦</b></div></div></section>
 
     <section class="faq shell" id="faq"><div><div class="section-label">05 — FAQ</div><h2>Questions,<br><em>translated.</em></h2></div><div class="accordion">
       <details open><summary>What exactly is code-mixed text?<span>+</span></summary><p>It’s how multilingual people naturally communicate — switching between languages, scripts, and slang within the same sentence. Think Hinglish, Spanglish, Arabizi, Taglish, and countless everyday combinations.</p></details>
