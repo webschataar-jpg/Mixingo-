@@ -51,9 +51,25 @@ document.querySelectorAll('.accordion details').forEach((item) => item.addEventL
 
 const waitlistForm = document.querySelector('#waitlistForm');
 if (waitlistForm) {
-  waitlistForm.addEventListener('submit', (event) => {
+  waitlistForm.addEventListener('submit', async (event) => {
     event.preventDefault();
-    waitlistForm.classList.add('submitted');
-    waitlistForm.querySelector('.form-success')?.focus();
+    const submitButton = waitlistForm.querySelector('button[type="submit"]');
+    const scriptUrl = waitlistForm.dataset.scriptUrl;
+    const formData = new FormData(waitlistForm);
+    formData.append('submittedAt', new Date().toISOString());
+    submitButton?.setAttribute('disabled', 'true');
+
+    try {
+      if (scriptUrl) {
+        await fetch(scriptUrl, { method: 'POST', mode: 'no-cors', body: formData });
+      }
+      waitlistForm.classList.add('submitted');
+      waitlistForm.querySelector('.form-success')?.focus();
+    } catch (error) {
+      console.error('Waitlist submission failed', error);
+      alert('Something went wrong. Please email hello@mixingo.app and we will add you manually.');
+    } finally {
+      submitButton?.removeAttribute('disabled');
+    }
   });
 }
