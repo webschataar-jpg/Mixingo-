@@ -10,6 +10,8 @@ export default defineConfig({
         compare: resolve(import.meta.dirname, 'compare.html'),
         developers: resolve(import.meta.dirname, 'developers.html'),
         about: resolve(import.meta.dirname, 'about.html'),
+        privacy: resolve(import.meta.dirname, 'privacy.html'),
+        notFound: resolve(import.meta.dirname, '404.html'),
       },
     },
   },
